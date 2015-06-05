@@ -1,7 +1,7 @@
 {
   "name": "dstructs",
   "version": "0.0.0",
-  "description": "Data structure.",
+  "description": "Data structures.",
   "author": {
     "name": "Athan Reines",
     "email": "kgryte@gmail.com"
@@ -23,10 +23,16 @@
     "url": "git://github.com/dstructs/dstructs.git"
   },
   "keywords": [
+  	"compute.io",
+  	"computation",
+  	"compute",
+  	"mathematics",
+  	"math",
     "dstructs",
     "data",
     "structure",
-    "data structure"
+    "data structures",
+    "algorithms"
   ],
   "bugs": {
     "url": "https://github.com/dstructs/dstructs/issues"
