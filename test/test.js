@@ -3,10 +3,7 @@
 
 // MODULES //
 
-var // Expectation library:
-	chai = require( 'chai' ),
-
-	// Module to be tested:
+var chai = require( 'chai' ),
 	dstructs = require( './../lib' );
 
 
@@ -36,6 +33,7 @@ function testProperty( name ) {
 describe( 'dstructs', function tests() {
 
 	var properties = [
+		'array',
 		'matrix'
 	];
 

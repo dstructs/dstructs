@@ -13,9 +13,9 @@
     }
   ],
   "scripts": {
-    "test": "./node_modules/.bin/mocha",
-    "test-cov": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
-    "coveralls": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coveralls/coverage --report lcovonly -- -R spec && cat ./reports/coveralls/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coveralls"
+    "test": "mocha",
+    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
   },
   "main": "./lib",
   "repository": {
@@ -23,29 +23,34 @@
     "url": "git://github.com/dstructs/dstructs.git"
   },
   "keywords": [
-  	"compute.io",
-  	"computation",
-  	"compute",
-  	"mathematics",
-  	"math",
+    "compute.io",
+    "computation",
+    "compute",
+    "mathematics",
+    "math",
     "dstructs",
     "data",
     "structure",
     "data structures",
-    "algorithms"
+    "algorithms",
+    "matrix",
+    "array",
+    "typed array",
+    "typed"
   ],
   "bugs": {
     "url": "https://github.com/dstructs/dstructs/issues"
   },
   "dependencies": {
-    "dstructs-matrix": "^1.0.0"
+    "dstructs-array": "1.x.x",
+    "dstructs-matrix": "2.x.x"
   },
   "devDependencies": {
-    "chai": "2.x.x",
-    "coveralls": "^2.11.1",
+    "chai": "3.x.x",
+    "codecov.io": "^0.1.5",
     "istanbul": "^0.3.0",
     "jshint": "2.x.x",
-    "jshint-stylish": "^1.0.0",
+    "jshint-stylish": "2.x.x",
     "mocha": "2.x.x"
   },
   "license": "MIT"
